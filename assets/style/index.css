@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* start nsv section */
+.navbar {
+ background-color: black;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar ul li {
+    list-style: none;
+    padding: 15px; 
+    margin: 8px;
+}
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    opacity: 0;
+    transition: .6s;
+
+}
+.navbar ul li a:hover::before {
+    opacity: 1;
+    transform: scaleY(2)
+}
+/* end nav section */
+/* start hero sction */
+.hero {
+    background-image: url(../img/coffeehouse.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:end; 
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.hero .title {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero .title h1 {
+    font-size: 60px;
+    line-height: 1.5;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+.hero .spans {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+.hero .spans .span1 {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 3px;
+}
+.hero .spans .span2 {
+    color: white;
+    margin: 10px;
+}
+/* end hero section */
+/* start about section */
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(247, 245, 242);
+
+}
+.about h3 {
+    background-color: black;
+    color:white;
+    padding: 8px;
+    margin: 50px;
+    word-spacing: 8px;
+}
+.about .info {
+    width: 520px;
+}
+.about .info p {
+    margin: 20px;
+    line-height: 1.5;
+    word-spacing: 3px;
+    color: rgb(69, 68, 67);
+}
+.about .info .active {
+    background-color: rgb(241, 241, 241);
+    padding: 8px;
+    margin: 20px;
+    border-left: 5px solid rgb(204, 204, 204) ;
+}
+.about .info .active p {
+    color: rgb(107, 107, 107);
+}
+.about img {
+    width: 490px;
+    margin: 20px;
+}
+.about .about-time {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 500px;
+    margin: 20px;
+}
+.about .about-time p {
+    margin: 8px;
+    color: rgb(100, 99, 98);
+}
+.about .about-time p span {
+    color: rgb(13, 13, 13);
+    font-size: 18px;
+}
+/* end about section */
+/* start menu section */
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(247, 245, 242);
+}
+.menu h3 {
+    background-color: black;
+    color:white;
+    padding: 8px;
+    margin: 50px;
+    font-weight: 10;
+    word-spacing: 8px;
+}
+.menu .menu-info {
+    box-shadow: 0 0 4px 3px rgb(204, 204, 204); 
+    margin: 20px;
+    width: 520px;
+}
+.menu .menu-info .eat-drink{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 3px 2px 2px rgb(204, 204, 204);
+}
+.menu .menu-info .eat-drink .active:hover {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    cursor: pointer;
+}
+.menu .menu-info .eat-drink .active1:hover {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    cursor: pointer;
+}
+.menu .menu-info .eat-drink p {
+    margin: 5px 8px; 
+    padding: 4px 110px;
+    font-size: 14px;
+}
+/* .menu .menu-info .eat-drink .active {
+    background-color: rgb(97, 97, 97);
+    color: white;
+} */
+.menu .menu-info .menu-content {
+    padding: 20px 8px;
+}
+.menu .menu-info .menu-content h4 {
+    margin: 20px 10px;
+    font-weight: 100;
+}
+.menu .menu-info .menu-content p {
+    margin: 20px 10px;
+    color: rgb(148, 147, 146);
+}
+.menu img {
+    width: 520px;
+}
+/* end menu section */
+/* start find section */
+.find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: rgb(247, 245, 242);
+}
+.find h3 {
+    background-color: black;
+    color:white;
+    padding: 8px;
+    margin: 50px;
+    font-weight: 10;
+    word-spacing: 8px;
+}
+.find .find-content {
+    width: 520px;
+}
+.find .find-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: rgb(112, 111, 110);
+}
+.find .find-content img {
+    width: 520px;
+}
+.find .find-content p .span1 {
+    background-color: black;
+    color: white;
+    padding: 3px 6px;
+}
+.find .find-content p .span2 {
+    color: black;
+    font-weight: bold;
+}
+.find .form form .input1 {
+    margin: 30px 0;
+    position: relative;
+}
+.find .form form .input1 input {
+    padding: 10px ;
+    width: 100%;
+}
+.find .form form .input1 label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: .5;
+    transition: .7s;
+}
+.find .form form .input1 textarea {
+    width: 100%;
+    padding: 20px 10px;
+}
+.find .form form .input1 textarea:focus + label {
+    top: -20px;
+    opacity: 1;
+    font-weight: bold;
+}
+.find .form form .input1 input:focus + label {
+    top: -20px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.find .form button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 10px 0 30px 0;
+}
+/* end find section */
+/* start footer section */
+.footer {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.footer p {
+    margin: 45px; 
+    color:rgb(58, 57, 56) ;
+}
+.footer p a {
+    color:rgb(58, 57, 56) ;
+}
+/* end footer section */
+
